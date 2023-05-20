@@ -1,0 +1,349 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
+
+@media screen and (max-width: 600px) {
+  .card-container{
+    width: 100%;
+    display: grid !important;
+    gap: 20px;
+  }
+   .back {
+    display: flex !important;
+    margin-left: 0 !important;
+    margin-top: 50px !important;
+  }
+  
+.task{
+  float: none!important;
+}
+.popup1{
+  width: 88% !important;
+  border-radius: 18px;
+}
+.add{
+  display: none !important;
+}
+.addnew{
+  margin:auto;
+}
+
+  
+  
+
+  .card {
+    width: 75% !important;
+    margin: auto !important;
+  }
+}
+
+
+
+
+
+.navbar {
+  background-color: transparent;
+  overflow: hidden;
+  font-family: "Noto Sans", sans-serif;
+}
+
+.navbar a {
+  float: left;
+  color: #000000;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 40px;
+}
+.navbar a span {
+  color: #11acdb;
+}
+
+.main-container {
+  background-color: #eae7e7;
+}
+.task {
+  display: flex;
+  flex-wrap: wrap;
+  float: right;
+  margin-left: 10px;
+}
+.task .link {
+  text-decoration: none;
+}
+.task .link h2 {
+  margin-right: 10px;
+  font-family: "Noto Sans", sans-serif;
+  color: #000000;
+}
+.circle-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #11acdb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin: 16px;
+}
+.circle-icon span {
+  width: 60%;
+  height: 5px;
+  background-color: #fff;
+}
+.circle-icon span::after {
+  content: "";
+  position: absolute;
+  width: 23px;
+  height: 5px;
+  background-color: #fff;
+}
+.circle-icon span::before {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 2px;
+  background-color: #fff;
+}
+.circle-icon span::after {
+  transform: rotate(90deg);
+}
+
+.card-container {
+  margin: 10px;
+  font-family: "Noto Sans", sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+
+}
+.card {
+  flex-direction: row;
+  background-color: #fff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: calc(23.33% - 30px);
+  height: 300px;
+  border-radius: 5px;
+  margin: 100px 50px 50px 100px;
+  cursor: pointer;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+.container {
+  padding: 2px 16px;
+}
+.heading {
+  color: #11acdb;
+  text-decoration-line: none;
+}
+
+.disabled-radio {
+    position: relative;
+    display: inline-block;
+    
+    color: gray;
+    font-size: 20px;
+    text-decoration: line-through;
+}
+
+.disabled-radio .radio-button {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border: 2px solid gray;
+  border-radius: 4px;
+}
+
+.disabled-radio input[type="radio"] {
+  opacity: 0;
+}
+
+.disabled-radio input[type="radio"]:checked + .radio-button:before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 10px;
+  height: 10px;
+  background-color: gray;
+  border-radius: 2px;
+}
+
+.radio {
+  position: relative;
+  display: inline-block;
+  padding-left: 25px;
+  padding-top: 25px;
+  color: gray;
+}
+
+.radio .radio-button {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  margin-top: 25px;
+  border: 2px solid gray;
+  border-radius: 4px;
+}
+
+.radio input[type="radio"] {
+  opacity: 0;
+}
+
+.radio input[type="radio"]:checked + .radio-button:before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 10px;
+  height: 10px;
+  background-color: gray;
+  border-radius: 2px;
+}
+
+/* AddTask.html css */
+.main-block{
+  background-color: #eae7e7;
+  height: 650px;
+}
+.block {
+ 
+  text-align: justify;
+  display: flex;
+  flex-direction: row;
+  /* margin-left: 500px; */
+}
+.block .back {
+  display: flex;
+  margin-left: 500px;
+  margin-top: 50px;
+}
+.block .addtask {
+  display: flex;
+  flex-direction: row;
+  margin-left: 100px;
+  margin-top: 50px;
+}
+.block .back img {
+  width: 20px;
+  height: 20px;
+  border: 1px solid black;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  font-size: 10px;
+  padding: 10px;
+}
+.block a{
+  text-decoration: none;
+  font-family: "Noto Sans", sans-serif;
+  color: #000000;
+}
+
+.card1{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width:300px;
+  height: 300px;
+  background-color: #fff;
+  margin: 50px  600px;
+  border-radius: 5px;
+}
+.card1:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.card1 .container{
+  font-family: "Noto Sans", sans-serif;
+}
+
+.page1{
+    filter: blur(8px);
+
+}
+.page2blur{
+    filter: blur(8px);
+}
+/* page-2 */
+
+.page2 {
+    width: 100vw;
+    height: 800px;
+    position: absolute;
+    background: rgba(79, 79, 79, 0.25);
+    backdrop-filter: blur(4px);
+    top: 0%;
+    left: 0%;
+}
+
+
+.popup1 {
+    background: rgb(255, 255, 255);
+    width: 400px;
+    height: 200px;
+    text-align: center;
+    padding: 5px 10px;
+    margin: auto;
+    margin-top: 350px;
+}
+
+.addnewtask-heading {
+    float: left;
+    border-bottom: 2px solid var(--skyblue);
+    color: var(--black);
+}
+
+
+
+.cross {
+    float: right;
+    font-size: 32px;
+    line-height: 50px;
+    color: var(--black);
+    padding: 0px 5px;
+    
+}
+
+
+
+
+
+.addnewtask-heading {
+    font-size: 18px;
+    font-weight: 500;
+    padding: 15px 10px;
+}
+
+.c_input {
+    outline: none;
+    border: 1px solid var(--border);
+    background: white;
+    width: 100%;
+    margin: 0px 0px;
+    padding: 27px 0px;
+}
+
+.addTaskbtn {
+    float: right;
+    padding: 8px 30px;
+    background: var(--skyblue);
+    color: white;
+    border: 2px solid var(--skyblue);
+    border-radius: 5px;
+    margin: 10px 0px;
+}
+
+.addTaskbtn:hover {
+    background: var(--white);
+    border: 1px solid var(--skyblue);
+    color: var(--skyblue);
+    transition: ease 0.2s;
+    padding: 10px 32px;
+}
+hr{
+    color: gray;
+}
