@@ -5,65 +5,51 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
-    <title>CSS Projectpage 3</title>
+    <title>Todo App UI Web</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/078812abb6.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <div class="navbar">
-        <a class="active" href="">Tasks <span>List</span></a>
-    </div>
-<div class="main-block">
+    <nav class="nav">
+        <a href="./index.html" class="logo">Tasks <span class="list"> List</span></a>
+    </nav>
 
-
-    <div class="block">
-        <div class="back">
-            <a class = "centerDEV" href="./index2.html">
-            <div class="circle-icon">
-                <img src="arrow.png" alt="" href="./index.html">
+    <div class="page3container">
+        <div class="page3Options">
+            <div class="back-Contaner">
+                <a href="./index.html" class="back"><i class="fa-solid fa-backward backon"></i>&nbsp;Back</a>
             </div>
-            </a>
-            <a class="link" href="./index2.html">
-                <h2>Back</h2>
-            </a>
-      
-        </div>
-        <div class="addtask">
-            <a href = "./index4.html">
-            <div class="circle-icon">
-                <span></span>
+            <div class="newtask" id="$newtask">
+                <a href="./newTask.html" class="plusSign" target="_self">+</a>
+                <a href="./newTask.html" class="addNewtask" target="_self">Add New Task</a>
             </div>
-            </a>
-            <a class="link" href="./index4.html">
-                <h2 class="add">Add New Task</h2>
-            </a>
-        </div>          
-    </div>
-  
-    <div class="card" style="margin: auto; margin-top: 80px;">
-        <div class="container">
-           
-          <h4 class="heading" style="
-          margin-left: 70px;
-          font-size: 25px;
-      "><b>Trip to paris</b></h4>
-       
-          <label class="disabled-radio" style="    font-size: 25px;">
-            <input type="checkbox" checked disabled>
-             Visit Church
-          </label>
-
-          <label class="radio" style="font-size: 24px;">
-            <input type="radio" />
-            <span class="radio-button"></span>
-            shopping
-          </label>
-          
         </div>
-      </div>
-</div>
+
+        <div class="page3-cards">
+            <h5 class="page3-h5">Trip To Paris</h5>
+            <form action="#">
+                <div class="checks">
+                    <span class="del"> <input type="checkbox" id="church" name="church" checked> Visit Church</span>
+                    <br> <br>
+                    <input type="checkbox" id="shopping" name="shopping"> Shopping
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+    <div class="page2 page4">
+        <div class="popup1">
+            <div class="addnewtask-container">
+                <p class="addnewtask-heading">Add New Item</p>
+                <a href="./index2.html" class="cross"><i class="fa-solid fa-xmark"></i></a>
+                <input type="text" name="c" id="c" placeholder="Visit Famous Places" class="c_input">
+                <a href="./index.html" class="addTaskbtn"> + Add Task</a>
+            </div>
+        </div>
+    </div>
+
 </body>
 
 </html>
